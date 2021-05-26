@@ -7,7 +7,6 @@
 	Long no = Long.parseLong(strNo);
 	String password = request.getParameter("password");
 	
-	System.out.println(password);
 	GuestBookVo vo = new GuestBookVo();
 	vo.setNo(no);
 	vo.setPassword(password);
