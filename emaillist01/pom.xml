@@ -15,4 +15,8 @@
     		<version>2.7.2</version>
 		</dependency>
 	</dependencies>
+	
+	<build>
+		<finalName>emaillist01</finalName>
+	</build>
 </project>
