@@ -3,7 +3,7 @@
 <%@page import="com.douzone.guestbook.dao.GuestBookDao"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%
-	List<GuestBookVo> list = new GuestBookDao().findAll();
+List<GuestBookVo> list = new GuestBookDao().findAll();
 %>
 <html>
 <head>
@@ -11,7 +11,7 @@
 <title>방명록</title>
 </head>
 <body>
-	<form action="<%=request.getContextPath() %>/gb?a=add" method="post">
+	<form action="<%=request.getContextPath()%>/gb?a=add" method="post">
 		<table border=1 width=500>
 			<tr>
 				<td>이름</td><td><input type="text" name="name"></td>
@@ -28,8 +28,8 @@
 
 	<br>
 	<%
-		int listSize = list.size();
-		for(GuestBookVo vo : list) {
+	int listSize = list.size();
+			for(GuestBookVo vo : list) {
 	%>
 	<table width=510 border=1>
 		<tr>
